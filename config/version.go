@@ -13,7 +13,7 @@ var (
 )
 
 const (
-	Version = "3.5.0"
+	Version = "3.5.1-Atlassian"
 )
 
 func init() {
@@ -22,7 +22,7 @@ func init() {
 		gitCommit = "; git " + GitCommit
 	}
 	if len(Vendor) == 0 {
-		Vendor = "GitHub"
+		Vendor = "GitHub/Atlassian"
 	}
 	VersionDesc = fmt.Sprintf("git-lfs/%s (%s; %s %s; go %s%s)",
 		Version,
